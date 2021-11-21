@@ -42,7 +42,9 @@
     "clientTheme": "none",
     "clientThemeVariant": "",
     "reactive": false,
-    "enableGradleEnterprise": false
+    "enableGradleEnterprise": false,
+    "entities": ["Sach", "Cuonsach", "Nhaxuatban", "Nhapsach", "Phongdocsach", "Muonsach", "Thuephong", "Thuthu", "Docgia"],
+    "lastLiquibaseTimestamp": 1637492701000
   },
   "git-provider": "GitHub",
   "git-company": "kakahaha6193",

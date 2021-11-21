@@ -1,0 +1,46 @@
+{
+  "name": "Muonsach",
+  "fields": [
+    {
+      "fieldName": "ngayMuon",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "hanTra",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "ngayTra",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "trangThai",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "docgia",
+      "otherEntityRelationshipName": "muonsach",
+      "relationshipName": "docgia"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "cuonsach",
+      "otherEntityRelationshipName": "muonsach",
+      "relationshipName": "cuonsach"
+    }
+  ],
+  "entityTableName": "muonsach",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20211121110458"
+}

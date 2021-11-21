@@ -1,0 +1,38 @@
+{
+  "name": "Thuephong",
+  "fields": [
+    {
+      "fieldName": "ngayThue",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "ca",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "docgia",
+      "otherEntityRelationshipName": "thuephong",
+      "relationshipName": "docgia"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "phongdocsach",
+      "otherEntityRelationshipName": "thuephong",
+      "relationshipName": "phongdocsach"
+    }
+  ],
+  "entityTableName": "thuephong",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20211121110459"
+}
