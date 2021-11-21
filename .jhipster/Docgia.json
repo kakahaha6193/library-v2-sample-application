@@ -1,0 +1,41 @@
+{
+  "name": "Docgia",
+  "fields": [
+    {
+      "fieldName": "hoTen",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ngaySinh",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "diaChi",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cmt",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trangThai",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "tienCoc",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "docgia",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20211121110501"
+}

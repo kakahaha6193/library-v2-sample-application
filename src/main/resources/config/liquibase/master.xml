@@ -15,7 +15,21 @@
     <property name="datetimeType" value="datetime" dbms="oracle, mssql, postgresql, h2"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211121110453_added_entity_Sach.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211121110454_added_entity_Cuonsach.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211121110455_added_entity_Nhaxuatban.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211121110456_added_entity_Nhapsach.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211121110457_added_entity_Phongdocsach.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211121110458_added_entity_Muonsach.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211121110459_added_entity_Thuephong.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211121110500_added_entity_Thuthu.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211121110501_added_entity_Docgia.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20211121110453_added_entity_constraints_Sach.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211121110454_added_entity_constraints_Cuonsach.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211121110456_added_entity_constraints_Nhapsach.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211121110458_added_entity_constraints_Muonsach.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20211121110459_added_entity_constraints_Thuephong.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

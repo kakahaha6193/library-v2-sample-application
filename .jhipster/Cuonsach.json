@@ -1,0 +1,33 @@
+{
+  "name": "Cuonsach",
+  "fields": [
+    {
+      "fieldName": "ngayHetHan",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "trangThai",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "sach",
+      "otherEntityRelationshipName": "cuonsach",
+      "relationshipName": "sach",
+      "ownerSide": true
+    }
+  ],
+  "entityTableName": "cuonsach",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20211121110454"
+}

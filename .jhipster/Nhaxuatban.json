@@ -1,0 +1,25 @@
+{
+  "name": "Nhaxuatban",
+  "fields": [
+    {
+      "fieldName": "tenNXB",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "diaChi",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "nhaxuatban",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20211121110455"
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Nhapsach",
+  "fields": [
+    {
+      "fieldName": "ngayGioNhap",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "soLuong",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "cuonsach",
+      "otherEntityRelationshipName": "nhapsach",
+      "relationshipName": "cuonsach"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "thuthu",
+      "otherEntityRelationshipName": "nhapsach",
+      "relationshipName": "thuthu"
+    }
+  ],
+  "entityTableName": "nhapsach",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "searchEngine": "elasticsearch",
+  "changelogDate": "20211121110456"
+}
