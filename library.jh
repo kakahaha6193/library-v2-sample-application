@@ -1,0 +1,78 @@
+
+entity Sach {
+	tenSach String,
+    giaNiemYet Integer,
+    tacgia String,
+    giaThue Long,
+    nganXep String,
+    theloai String
+}
+
+entity Cuonsach {
+	ngayHetHan Instant,
+    trangThai Integer
+}
+
+entity Nhaxuatban {
+	tenNXB String,
+    diaChi String,
+}
+
+entity Nhapsach {
+	ngayGioNhap Instant,
+	soLuong Integer
+}
+
+entity Phongdocsach {
+	tenPhong String,
+	viTri String,
+    sucChua Integer,
+    giaThue Long
+}
+
+entity Muonsach {
+    ngayMuon Instant,
+    hanTra Instant,
+    ngayTra Instant,
+    trangThai Integer
+}
+
+entity Thuephong {
+	ngayThue Instant,
+    ca Integer
+}
+
+entity Thuthu {
+	hoTen String,
+	username String,
+	password String
+}
+
+entity Docgia {
+	hoTen String,
+	ngaySinh Instant,
+	diaChi String,
+    cmt String,
+    trangThai Integer,
+    tienCoc Long
+}
+
+relationship OneToOne {
+    Sach{nhaxuatban} to Nhaxuatban
+    Sach{phongdungsach} to Phongdungsach
+    Cuonsach{sach} to Sach
+}
+
+relationship ManyToOne {
+    Nhapsach{cuonsach} to Cuonsach
+    Nhapsach{thuthu} to Thuthu
+    Muonsach{docgia} to Docgia
+    Muonsach{cuonsach} to Cuonsach
+    Thuephong{docgia} to Docgia
+    Thuephong{phongdocsach} to Phongdocsach
+}
+
+paginate Sach, Muonsach, Thuephong with pagination
+service all with serviceImpl
+search * with elasticsearch except Phongdocsach
+
